@@ -103,6 +103,11 @@ body {
     display: none;
 }
 
+hr {
+    color: rgba(254, 161, 1, 0.904);
+    margin-top: 20px;
+    display: none;
+}
 /* header style */
 .header {
     max-width: 1260px;
@@ -202,6 +207,11 @@ main {
 }
 .discription-kinder {
     margin: 35px 0;
+}
+marquee {
+    margin-top: 30px;
+    background: rgb(1, 172, 253);
+    color: #fff;
 }
 .scroling-bar {
     display: flex;
@@ -331,11 +341,17 @@ main {
     .menus-icon {
         display: block;
     }
-    
     .banner {
         flex-direction: column-reverse;
         text-align: center;
         
+    }
+    .hero-content-img {
+        width: 90%;
+        
+    }
+    hr {
+        display: block;
     }
     .standard-card {
         flex-direction: column;
@@ -388,6 +404,13 @@ main {
     }
     .header {
         margin: 0px 50px;
+    }
+    .hero-content {
+        width: 50%;
+    }
+    .hero-content-img {
+        width: 80%;
+        
     }
     .standard-card {
         display: grid;
