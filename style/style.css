@@ -11,7 +11,33 @@ body {
     text-align: left;
 }
 /* shares style */
-
+    .titles {
+        color: rgb(0, 0, 0);
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 57.5px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .card-title {
+        color: rgb(32, 32, 32);
+        font-size: 24.52px;
+        font-weight: 700;
+        line-height: 30.65px;
+        letter-spacing: 0%;
+        /* text-align: center; */
+    }
+    .card-discription {
+        color: rgb(128, 128, 128);
+        font-size: 15.09px;
+        font-weight: 500;
+        line-height: 28.3px;
+        letter-spacing: 0%;
+        /* text-align: center; */
+    }
+    .card-link {
+        text-decoration: none;
+    }
 
 /* nav style */
 .nav {
@@ -123,7 +149,131 @@ body {
     width: 100%;
 }
 
+/* main style  */
+main {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+.standard {
+    background-image: url(../style/assets/bg.png);
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.standard-card {
+    display: flex;
 
+    gap: 30px;
+    margin-top: 80px;
+}
+.standard-card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    padding: 60px 40px;
+}
+.standard-card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    padding: 60px 40px;
+}
+.standard-card-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    padding: 60px 40px;
+}
+.title-kinder {
+    margin-top: 35px;
+}
+.discription-kinder {
+    margin: 35px 0;
+}
+.scroling-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+.scroling-bar a {
+    padding: 15px 20px;
+    border-radius: 30px;
+    background: rgb(254, 163, 1);
+}
+/* stories style */
+.stories {
+    text-align: center;
+    background: url(../style/assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    padding: 50px 20px;
+    
+}
+.stories-all-cards {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.left-card {
+    width: 40%;
+    background: #fff;
+    text-align: left;
+    border-radius: 16px;
+    overflow: hidden;
+    
+}
+.left-card img {
+    width: 100%;
+}
+.left-card-content {
+    margin: 50px 60px 50px 40px;
+    
+}
+.card-title-all {
+    margin: 0px 0 15px 0;
+}
+.left-card-btn {
+    position: relative;
+    bottom: 70px;
+    font-size: 15px;
+}
+
+.right-cards {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.card-store {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-store img {
+    width: 100%;
+}
+.right-card-btn {
+    position: relative;
+    bottom: 20px;
+    font-size: 15px;
+}
+.right-card-content {
+    margin: 0px 55px 0px 35px;
+    text-align: left;
+}
 
 /* it's for small device */
 
@@ -146,6 +296,32 @@ body {
         text-align: center;
         
     }
+    .standard-card {
+        flex-direction: column;
+        margin: 0 50px;
+    }
+    .scroling-bar {
+        display: none;
+    }
+    .stories {
+        padding: 50px 10px;
+    }
+    .left-card {
+        display: none;
+    }
+    .right-cards {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        gap: 20px;
+        width: 80%;
+    }
+    .right-card-content {
+        margin: 0 0 0 0;
+    }
+    .right-card-btn {
+        font-size: 10px;
+        margin: 0 20px;
+    }
 }
 /* it's for medium device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -164,4 +340,13 @@ body {
     .header {
         margin: 0px 50px;
     }
+    .standard-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 50px;
+    }
+    .scroling-bar {
+        display: none;
+    }
+    
 }
