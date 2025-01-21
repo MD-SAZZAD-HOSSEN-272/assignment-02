@@ -274,7 +274,48 @@ main {
     margin: 0px 55px 0px 35px;
     text-align: left;
 }
-
+.left-right-btn {
+    margin-top: 50px;
+}
+/* footer style */
+.footer {
+    background: rgb(1, 172, 253);
+    padding: 123px 228px 174px 140px;
+    display: flex;
+    justify-content: space-between;
+}
+.education-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+.education-content img {
+    background: white;
+}
+.education-discription {
+    width: 400px;
+    color: white;
+    margin-top: 35px;
+}
+.about h2, .keep-it h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+.about ul {
+    list-style: none;
+    margin-top: 30px;
+    color: #fff;
+}
+.about ul li {
+    margin-bottom: 10px;
+}
+.social-link {
+    font-size: 40px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
 /* it's for small device */
 
 @media screen and (max-width: 576px) {
@@ -322,6 +363,14 @@ main {
         font-size: 10px;
         margin: 0 20px;
     }
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+        padding: 123px 20px 174px 20px;
+    }
+    .education-discription {
+        width: 100%;
+    }
 }
 /* it's for medium device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -347,6 +396,10 @@ main {
     }
     .scroling-bar {
         display: none;
+    }
+    .footer {
+        gap: 30px;
+        padding: 123px 20px 174px 20px;
     }
     
 }
