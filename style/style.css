@@ -258,6 +258,7 @@ marquee {
 .left-card-btn {
     position: relative;
     bottom: 70px;
+    padding: 10px 15px;
     font-size: 15px;
 }
 
@@ -279,6 +280,7 @@ marquee {
     position: relative;
     bottom: 20px;
     font-size: 15px;
+    background: rgb(1, 172, 253);
 }
 .right-card-content {
     margin: 0px 55px 0px 35px;
@@ -286,6 +288,9 @@ marquee {
 }
 .left-right-btn {
     margin-top: 50px;
+    padding: 15px 40px;
+    font-weight: 600;
+    color: #f3f0f0;
 }
 /* footer style */
 .footer {
